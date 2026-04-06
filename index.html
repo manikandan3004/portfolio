@@ -1,131 +1,228 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manikandan | Software Engineer</title>
-    <link rel="stylesheet" href="MyStyle.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Manikandan Portfolio</title>
+
+<meta name="description" content="Manikandan Portfolio - Computer Science Engineering Student | Java | SQL | Web Development">
+
+<link rel="stylesheet" href="MyStyle.css">
+
 </head>
+
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <span class="slash">/</span>
-                <div class="logo-text">
-                    <strong>Manikandan</strong>
-                    <span>Software Engineer</span>
-                </div>
-            </div>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact" class="nav-cta">Contact Me</a>
-            </div>
-        </nav>
-    </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Building scalable <span class="highlight">software solutions</span>.</h1>
-                <p>Final-year Computer Science Engineering student focused on Java, SQL, and robust application architecture.</p>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn-primary">View My Work</a>
-                    <a href="resume/Manikandan_Resume.pdf" download class="btn-secondary">Download CV</a>
-                </div>
-            </div>
-        </section>
+<header id="Pheader">
 
-        <section id="about" class="about">
-            <div class="container">
-                <div class="about-grid">
-                    <div class="about-image">
-                        <img src="images/profile/profile_image.jpg" alt="Manikandan Profile" />
-                    </div>
-                    <div class="about-text">
-                        <span class="label">My Background</span>
-                        <h2>Passionate about clean code and efficient databases.</h2>
-                        <p>With hands-on experience in full-stack system design, I specialize in applying step-by-step logic to real-world problems. I thrive in professional environments that prioritize efficient, modular code.</p>
-                        <div class="stats">
-                            <div><strong>Java</strong> Specialized</div>
-                            <div><strong>SQL</strong> Professional</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<div id="SlaceName">
+<span class="slash">/</span>
+<div class="name1">
+<strong>
+Manikandan
+<br>
+<small>Student</small>
+</strong>
+</div>
+</div>
 
-        <section id="skills" class="skills">
-            <div class="container">
-                <h2 class="section-title">Technical Expertise</h2>
-                <div class="skill-category">
-                    <h3>Languages</h3>
-                    <div class="skill-grid">
-                        <div class="skill-item"><img src="images/java1.png" alt="Java" /><span>Java</span></div>
-                        <div class="skill-item"><img src="images/sql1.png" alt="SQL" /><span>SQL</span></div>
-                        <div class="skill-item"><img src="images/js1.png" alt="JS" /><span>JavaScript</span></div>
-                        <div class="skill-item"><img src="images/html1.png" alt="HTML" /><span>HTML5</span></div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<div id="Tabs">
+<a href="#AboutMe">About Me</a>
+<a href="#Skils">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#resume">Resume</a>
+<a href="#contact">Contact Me</a>
+</div>
 
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <div class="project-info">
-                            <span class="tech-stack">Java • MySQL • Web</span>
-                            <h3>Multi-Factor Auth System</h3>
-                            <p>A high-security system utilizing Email OTP, image-based authentication, and matrix verification.</p>
-                            <a href="#" class="view-project">Case Study →</a>
-                        </div>
-                    </div>
+</header>
 
-                    <div class="project-card">
-                        <div class="project-info">
-                            <span class="tech-stack">JavaScript • Node.js</span>
-                            <h3>Enterprise Task Tracker</h3>
-                            <p>Optimized task management system with persistent state and progress tracking features.</p>
-                            <a href="#" class="view-project">View Source →</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="contact" class="contact">
-            <div class="contact-card">
-                <h2>Let's connect.</h2>
-                <p>Seeking entry-level opportunities to contribute to professional development teams.</p>
-                <form action="https://formspree.io/f/xkovvaop" method="POST" class="contact-form">
-                    <input type="text" name="name" placeholder="Full Name" required />
-                    <input type="email" name="email" placeholder="Email Address" required />
-                    <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Inquiry</button>
-                </form>
-            </div>
-        </section>
-    </main>
+<main>
+<section id="AboutMe">
 
-    <script>
-        // Smooth form handling with success feedback
-        const form = document.querySelector(".contact-form");
-        form.addEventListener("submit", async (e) => {
-            e.preventDefault();
-            const response = await fetch(form.action, {
-                method: "POST",
-                body: new FormData(form),
-                headers: { 'Accept': 'application/json' }
-            });
-            if (response.ok) {
-                alert("Thanks for your message. Have a Good Day 😊");
-                form.reset();
-            }
-        });
-    </script>
+<div class="abHead">
+<h2>About Me</h2>
+</div>
+
+<div class="about-container">
+
+<div class="about-img">
+<img src="images/profile/profile_image.jpg" alt="Profile Image">
+</div>
+
+<div class="about-text">
+
+<p>
+
+I am a final-year Computer Science Engineering student with a strong interest in software development and problem-solving. I have hands-on experience with Java, SQL, and database-driven applications, and I have worked on academic projects involving full-stack system design and implementation.
+
+<br><br>
+
+I enjoy learning concepts step by step and applying them to real-world problems, with a focus on writing clear, logical, and efficient code.
+
+<br><br>
+
+I am currently seeking entry-level opportunities where I can enhance my technical skills, contribute to practical software solutions, and grow as a professional software engineer.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<section>
+
+<div class="abHead">
+<h1 id="Skils">Skills</h1>
+<h3 class="skillSub">Programming Languages</h3>
+</div>
+
+<div class="skillImage">
+
+<img src="images/html1.png">
+<img src="images/css1.png">
+<img src="images/js1.png">
+<img src="images/java1.png">
+<img src="images/sql1.png">
+
+</div>
+
+
+<h3 class="skillSub">Tools</h3>
+
+<div class="Tools">
+
+<img src="images/tools/mysql1.png">
+<img src="images/tools/vs1.png">
+<img src="images/tools/github1.png">
+<img src="images/tools/eclipse1.png">
+<img src="images/tools/git1.png">
+
+</div>
+
+</section>
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="project-container">
+
+
+<div class="project-card">
+
+<h3>Multi-Factor Authentication System (In Progress)</h3>
+
+<p>
+A three-level authentication system for high-security applications using Email OTP, image-based authentication, and matrix password verification.
+</p>
+
+<p class="tech">
+Tech: HTML, CSS, JavaScript, Java, MySQL
+</p>
+
+</div>
+
+
+
+<div class="project-card">
+
+<h3>E-Commerce Lite Website</h3>
+
+<p>
+A simple e-commerce web application with product listing, cart functionality, and a basic checkout flow.
+</p>
+
+<p class="tech">
+Tech: HTML, CSS, JavaScript
+</p>
+
+</div>
+
+
+
+<div class="project-card">
+
+<h3>Task Tracker</h3>
+
+<p>
+A simple task management application that allows users to add daily tasks, mark completed tasks, and remove them.
+</p>
+
+<p class="tech">
+Tech: HTML, CSS, JavaScript, Node.js
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+<section id="resume">
+
+<h2>Resume</h2>
+
+<p>Download my resume to know more about my skills</p>
+
+<a href="resume/Manikandan_Resume.pdf" download class="resume-btn">
+Download Resume
+</a>
+
+</section>
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+
+<input type="hidden" name="access_key" value="bdacd865-aba2-42ec-af9b-d75e4adbf5d1">
+
+<div class="form-group">
+<input type="text" name="name" placeholder="Your Name" required>
+</div>
+
+<div class="form-group">
+<input type="email" name="email" placeholder="Your Email" required>
+</div>
+
+<div class="form-group">
+<textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+</div>
+
+<input type="hidden" name="redirect" value="https://manikandan4212334.github.io/Portfolio/#contact">
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+<p>© 2026 Manikandan | Portfolio</p>
+
+</footer>
+
+
+
+<script>
+const form = document.getElementById("contactForm");
+form.addEventListener("submit", function(e) {
+  const name = form.elements['name'].value;
+  const email = form.elements['email'].value;
+  const message = form.elements['message'].value;
+  
+  // Show confirmation alert
+  alert(`Message Details:\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}\n\nSending your message...`);
+});
+</script>
+
 </body>
+
 </html>
